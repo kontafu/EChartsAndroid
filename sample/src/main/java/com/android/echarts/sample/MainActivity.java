@@ -39,19 +39,36 @@ public class MainActivity extends AppCompatActivity {
         xAxis.add("C");
         xAxis.add("D");
 
-        List<Double> yLabels = new ArrayList<>();
-        yLabels.add(20d);
-        yLabels.add(30d);
-        yLabels.add(40d);
-        yLabels.add(50d);
-
         List<DataSets.YAxis> yAxis = new ArrayList<>();
 
-        DataSets.YAxis yAxis1 = new DataSets.YAxis("异常数", "#FF0000", yLabels);
-        yAxis.add(yAxis1);
+        /*===============================*/
+        List<Double> yLabels1 = new ArrayList<>();
+        yLabels1.add(20d);
+        yLabels1.add(30d);
+        yLabels1.add(40d);
+        yLabels1.add(50d);
 
-        DataSets.YAxis yAxis2 = new DataSets.YAxis("影响人数", "#00FF00", yLabels);
+        DataSets.YAxis yAxis1 = new DataSets.YAxis("异常数", "#FF0000", yLabels1);
+        yAxis.add(yAxis1);
+        /*===============================*/
+        List<Double> yLabels2 = new ArrayList<>();
+        yLabels2.add(50d);
+        yLabels2.add(40d);
+        yLabels2.add(30d);
+        yLabels2.add(20d);
+
+        DataSets.YAxis yAxis2 = new DataSets.YAxis("影响人数", "#00FF00", yLabels2);
         yAxis.add(yAxis2);
+        /*===============================*/
+        List<Double> yLabels3 = new ArrayList<>();
+        yLabels3.add(50d);
+        yLabels3.add(40d);
+        yLabels3.add(30d);
+        yLabels3.add(20d);
+
+        DataSets.YAxis yAxis3 = new DataSets.YAxis("影响人数环比", "#0000FF", yLabels3);
+//        yAxis.add(yAxis3);
+        /*===============================*/
 
         DataSets dataSets = new DataSets(xAxis, yAxis);
 
