@@ -1,0 +1,18 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*#main {*/
+/*max-width: 2560px;*/
+/*max-height: 2560px;*/
+/*}*/
+
+/*@media screen and (max-width: 2560px) {*/
+/*#main {*/
+/*width: 100%;*/
+/*}*/
+/*}*/
