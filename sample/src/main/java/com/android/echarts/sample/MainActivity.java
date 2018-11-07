@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.android.echarts.EChartBarView;
+import com.android.echarts.dataset.Clay;
 import com.android.echarts.dataset.DataSets;
 import com.android.echarts.interfaces.OnChartItemClickListener;
 
@@ -26,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         webView = findViewById(R.id.web_view);
         webView.setOnChartItemClickListener(new OnChartItemClickListener() {
             @Override
-            public void onItemClick(@NotNull String params) {
-                Log.d("TAG", params);
+            public void onItemClick(@NotNull Clay params) {
+                Log.d("TAG", "onItemClick: " + params);
             }
         });
     }
@@ -38,17 +39,19 @@ public class MainActivity extends AppCompatActivity {
         xAxis.add("B");
         xAxis.add("C");
         xAxis.add("D");
+        xAxis.add("E");
 
         List<DataSets.YAxis> yAxis = new ArrayList<>();
 
         /*===============================*/
         List<Double> yLabels1 = new ArrayList<>();
+        yLabels1.add(10d);
         yLabels1.add(20d);
         yLabels1.add(30d);
         yLabels1.add(40d);
         yLabels1.add(50d);
 
-        DataSets.YAxis yAxis1 = new DataSets.YAxis("异常数", "#FF0000", yLabels1);
+        DataSets.YAxis yAxis1 = new DataSets.YAxis("异常数", "#FFFF00", yLabels1);
         yAxis.add(yAxis1);
         /*===============================*/
         List<Double> yLabels2 = new ArrayList<>();
@@ -56,18 +59,10 @@ public class MainActivity extends AppCompatActivity {
         yLabels2.add(40d);
         yLabels2.add(30d);
         yLabels2.add(20d);
+        yLabels2.add(10d);
 
-        DataSets.YAxis yAxis2 = new DataSets.YAxis("影响人数", "#00FF00", yLabels2);
+        DataSets.YAxis yAxis2 = new DataSets.YAxis("影响人数", "#00FFFF", yLabels2);
         yAxis.add(yAxis2);
-        /*===============================*/
-        List<Double> yLabels3 = new ArrayList<>();
-        yLabels3.add(50d);
-        yLabels3.add(40d);
-        yLabels3.add(30d);
-        yLabels3.add(20d);
-
-        DataSets.YAxis yAxis3 = new DataSets.YAxis("影响人数环比", "#0000FF", yLabels3);
-//        yAxis.add(yAxis3);
         /*===============================*/
 
         DataSets dataSets = new DataSets(xAxis, yAxis);

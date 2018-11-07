@@ -3,6 +3,7 @@
  * webView.loadUrl("javascript:invokeJs(\"obj\")")
  */
 function invokeJs(params) {
+    alert(params);
     let dataSetsFromNative = JSON.parse(decodeURIComponent(params));
 
     let yAxisArr = [];
@@ -13,7 +14,9 @@ function invokeJs(params) {
     let legendArr = [];
     dataSetsFromNative.legends.forEach(function (item) {
         legendArr.push({
-            icon: 'circle',
+            icon: 'roundRect',
+            itemWidth: 14,
+            itemHeight: 14,
             textStyle: {
                 fontSize: 8,
                 fontWeight: 700,
@@ -93,8 +96,8 @@ function invokeJs(params) {
         series: seriesArr
     };
 
-    alert(`source: ${JSON.stringify(dataSetsFromNative)}`);
-    alert(`options: ${JSON.stringify(options)}`);
+    // alert(`source: ${JSON.stringify(dataSetsFromNative)}`);
+    // alert(`options: ${JSON.stringify(options)}`);
 
     mChart.setOption(options);
     mChart.hideLoading();
@@ -105,8 +108,12 @@ function invokeJs(params) {
  * @param params 返回给 native 的数据
  */
 setOnClickListener = (params) => {
+    if (null === params) {
+        return
+    }
     try {
-        JsInterface.invokeNative(params);
+        let content = JSON.stringify(params);
+        JsInterface.invokeNative(encodeURIComponent(content));
     } catch (e) {
         /* 将出错日志以 alert 方式弹出，native 端重写 onJsAlert 即可获取 */
         alert(e);

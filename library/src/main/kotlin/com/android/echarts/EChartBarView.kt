@@ -6,12 +6,15 @@ import android.util.AttributeSet
 import android.webkit.JavascriptInterface
 import android.webkit.WebSettings
 import android.webkit.WebView
+import com.alibaba.fastjson.JSON
 import com.android.echarts.client.LocalWebChromeClient
 import com.android.echarts.client.LocalWebViewClient
+import com.android.echarts.dataset.Clay
 import com.android.echarts.dataset.DataSets
 import com.android.echarts.interfaces.JsInterface
 import com.android.echarts.interfaces.OnChartItemClickListener
 import com.android.echarts.utils.convert
+import java.net.URLDecoder
 
 @SuppressLint("SetJavaScriptEnabled", "AddJavascriptInterface")
 class EChartBarView @JvmOverloads constructor(
@@ -21,7 +24,9 @@ class EChartBarView @JvmOverloads constructor(
     private val mJsInterface = object : JsInterface() {
         @JavascriptInterface
         override fun invokeNative(params: String) {
-            onChartItemClickListener?.onItemClick(params)
+            val content = URLDecoder.decode(params, "utf-8")
+            val clay = JSON.parseObject(content, Clay::class.java)
+            onChartItemClickListener?.onItemClick(clay)
         }
     }
 
