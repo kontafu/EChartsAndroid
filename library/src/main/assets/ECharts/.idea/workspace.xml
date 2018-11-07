@@ -2,15 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2694b210-be35-47ad-a12f-af3479530136" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../sample/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../sample/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kotlin/com/android/echarts/EChartBarView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kotlin/com/android/echarts/client/LocalWebChromeClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kotlin/com/android/echarts/client/LocalWebViewClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kotlin/com/android/echarts/dataset/DataSets.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kotlin/com/android/echarts/dataset/LocalDataSets.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kotlin/com/android/echarts/interfaces/JsInterface.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kotlin/com/android/echarts/interfaces/OnChartItemClickListener.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kotlin/com/android/echarts/utils/Utils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/values/styles.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../sample/src/main/java/com/android/echarts/sample/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../sample/src/main/java/com/android/echarts/sample/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../sample/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../sample/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
@@ -63,48 +84,86 @@
     <session id="-515907095">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="84" />
-          <entry key="html" value="39" />
-          <entry key="js" value="2805" />
+          <entry key="html" value="60" />
+          <entry key="js" value="4227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="84" />
-          <entry key="HTML" value="39" />
-          <entry key="JavaScript" value="2805" />
+          <entry key="HTML" value="60" />
+          <entry key="JavaScript" value="4227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="3" />
-          <entry key="js" value="1" />
+          <entry key="html" value="4" />
+          <entry key="js" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="3" />
-          <entry key="JavaScript" value="1" />
+          <entry key="HTML" value="4" />
+          <entry key="JavaScript" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+              <folding>
+                <element signature="e#113#225#0" />
+                <element signature="e#246#418#0" />
+                <element signature="e#435#727#0" />
+                <element signature="e#637#807#0" />
+                <element signature="e#701#745#0" />
+                <element signature="e#766#801#0" />
+                <element signature="e#822#937#0" />
+                <element signature="e#938#1053#0" />
+                <element signature="e#982#1047#0" />
+                <element signature="e#745#1447#0" />
+                <element signature="e#914#958#0" />
+                <element signature="e#1990#2374#0" />
+                <element signature="e#2136#2237#0" />
+                <element signature="e#1693#2017#0" />
+                <element signature="e#1815#1900#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/interface.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -113,6 +172,8 @@
       <find>dataZoom</find>
       <find>options</find>
       <find>yAxis</find>
+      <find>legen</find>
+      <find>option</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,9 +185,10 @@
         <option value="$PROJECT_DIR$/js/echarts.min.js" />
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/bar-tick-align.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/bar-gradient.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/js/interface.js" />
       </list>
     </option>
   </component>
@@ -137,8 +199,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="-723" />
+    <option name="y" value="-1440" />
+    <option name="width" value="1056" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -146,7 +210,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,10 +217,16 @@
               <item name="ECharts" type="b2602c69:ProjectViewProjectNode" />
               <item name="ECharts" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ECharts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ECharts" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,22 +285,25 @@
       <updated>1541487086283</updated>
       <workItem from="1541487087864" duration="1412000" />
       <workItem from="1541489147567" duration="15096000" />
+      <workItem from="1541552698235" duration="6694000" />
+      <workItem from="1541561811691" duration="7914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16508000" />
+    <option name="totallyTimeSpent" value="31116000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="-723" y="-1440" width="1361" height="1440" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34868944" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23828278" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32896653" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39939713" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -266,38 +338,8 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/echarts.min.js" />
-    <entry file="file://$PROJECT_DIR$/js/echarts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="25468" column="6" lean-forward="true" selection-start-line="25468" selection-start-column="6" selection-end-line="25468" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bar-tick-align.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="11" column="98" lean-forward="true" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
-          <folding>
-            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bar-gradient.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="173" column="45" selection-start-line="173" selection-start-column="45" selection-end-line="173" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bar-tick-align.html" />
+    <entry file="file://$PROJECT_DIR$/bar-gradient.html" />
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -307,8 +349,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="168">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/echarts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="90355" column="17" lean-forward="true" selection-start-line="90355" selection-start-column="17" selection-end-line="90355" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding>
+            <element signature="e#113#225#0" />
+            <element signature="e#246#418#0" />
+            <element signature="e#435#727#0" />
+            <element signature="e#637#807#0" />
+            <element signature="e#701#745#0" />
+            <element signature="e#766#801#0" />
+            <element signature="e#822#937#0" />
+            <element signature="e#938#1053#0" />
+            <element signature="e#982#1047#0" />
+            <element signature="e#745#1447#0" />
+            <element signature="e#914#958#0" />
+            <element signature="e#1990#2374#0" />
+            <element signature="e#2136#2237#0" />
+            <element signature="e#1693#2017#0" />
+            <element signature="e#1815#1900#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/interface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
